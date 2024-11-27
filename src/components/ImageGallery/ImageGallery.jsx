@@ -7,7 +7,7 @@ function ImageGallery({ images, onClick }) {
     <ul className={styles.imageGallery}>
       {images.map((image) => (
         <li key={image.id}>
-          <div>
+          <div className={styles.imageCard}>
             <ImageCard image={image} onClick={onClick} />
           </div>
         </li>
